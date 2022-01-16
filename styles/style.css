@@ -27,9 +27,6 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    
-
-    
 }
 .drop-up img{
     width: 40px;
@@ -45,11 +42,10 @@ nav{
     font-size: 24px;  
      
 }
-.drop-down{
+.drop-down {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 .icon{
     width: 51px;
@@ -60,8 +56,9 @@ nav{
     color: white;
     text-decoration: none;
     padding: 20px;
-   
 }
+   
+
 /* menu-bar end */
 main{
     display: flex;
@@ -165,7 +162,18 @@ hr{
     .container{
         width: 100%;
     }
-    .players, .blogs, .course{
+    nav{
+        width: 100%;
+        justify-content: center;
+        margin: 0 auto;
+        
+    }
+    .drop-up, .drop-down{
+       width: 100%;
+        flex-direction: column;
+
+    }
+    .players, .blogs, .courses{
         
         grid-template-columns: repeat(1, 1fr);
         
@@ -178,11 +186,15 @@ hr{
     
 }
 /* tablet devices */
-@media only screen and (min-width:688px) and(maw-width:992px) {
+@media only screen and (min-width:688px) and (max-width:992px) {
+    
     .container{
         width: 100%;
     }
-    .players{
+    .players, .courses{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blogs{
         grid-template-columns: repeat(2, 1fr);
     }
     
