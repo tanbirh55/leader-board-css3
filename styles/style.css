@@ -5,7 +5,64 @@
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #F3F1FF;
+   
+   
 }
+.full-code{
+    width: 1440px;
+    height: 1220px; 
+    margin: 0 auto;  
+}
+/* menu-bar */
+nav{
+    width: 1440px;
+    height: 94px;
+    background-color: #562EFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+.drop-up{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    
+}
+.drop-up img{
+    width: 40px;
+    height: 51px;
+    margin-right: 10px;
+    
+}
+
+.plan{
+    color: white;
+    width: 54px;
+    height: 36px;
+    font-size: 24px;  
+     
+}
+.drop-down{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.icon{
+    width: 51px;
+    height: 51px;
+    
+}
+.drop-down a{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+   
+}
+/* menu-bar end */
 main{
     display: flex;
     flex-direction: column;
@@ -14,8 +71,7 @@ main{
 .container{
     background-color: #FFFFFF;
     width: 870px;
-    padding: 30px
-    ;
+    padding: 30px;
     margin-top: 21px;
 }
 hr{
